@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="properties-file"
+		value="src/test/resources/config.properties" />
+	<listeners>
+		<listener class-name="org.kpi.listener.ReportsListener" />
+		<listener class-name="org.kpi.listener.TestListener" />
+	</listeners>
+	<test name="Login">
+		<classes>
+			<class name="org.kpi.properties.PropertiesFile" />
+			<class name="org.kpi.test.TestConfig" />
+			<class name="org.kpi.test.LoginTest" />
+		</classes>
+	</test> <!-- Test -->
+	<!-- <test name="ForgotPassword">
+		<classes>
+			<class name="org.kpi.test.ForgotPasswordTest" />
+		</classes>
+	</test> -->
+	<!-- <test name="Dashboard">
+		<classes>
+			<class name="org.kpi.test.DashboardTest" />
+		</classes>
+	</test> -->
+	<!-- <test name="News">
+		<classes>
+			<class name="org.kpi.test.NewsScreenTest" />
+		</classes>
+	</test> -->
+	<!-- <test name="Escalations">
+		<classes>
+			<class name="org.kpi.test.EscalationsScreenTest" />
+			<class name="org.kpi.test.EscalationLiveChatTest" />
+			<class name="org.kpi.test.EscalationsFilterTest" />
+			<class name="org.kpi.test.IOMTEscalationsTest" />
+			<class name="org.kpi.test.MDREscalationsTest" />
+			<class name="org.kpi.test.SIEMEscalationsTest" />
+		</classes>
+	</test> -->
+	<!-- <test name="Notifications">
+		<classes>
+			<class name="org.kpi.test.NotificationsScreenTest" />
+			<class name="org.kpi.test.VTMNotificationsTest" />
+			<class name="org.kpi.test.IOMTNotificationsTest" />
+			<class name="org.kpi.test.MDRNotificationsTest" />
+			<class name="org.kpi.test.SIEMNotificationsTest" />
+		</classes>
+	</test> -->
+	<!-- <test name="LiveChat">
+		<classes>
+			<class name="org.kpi.test.LiveChatTest" />
+			<class name="org.kpi.test.IOMTLiveChatTest" />
+			<class name="org.kpi.test.MDRLiveChatTest" />
+			<class name="org.kpi.test.VTMLiveChatTest" />
+			<class name="org.kpi.test.SIEMLiveChatTest" />
+		</classes>
+	</test> -->
+	<!-- <test name="ParentChild">
+		<classes>
+			<class name="org.kpi.test.ParentChildTest" />
+		</classes>
+	</test> -->
+	<!-- <test name="Settings">
+		<classes>
+			<class name="org.kpi.test.SettingsClickTest" />
+			<class name="org.kpi.test.ProfilePageTest" />
+			<class name="org.kpi.test.CommunicationPreferencesTest" />
+			<class name="org.kpi.test.ChatHistoryTest" />
+			<class name="org.kpi.test.ChatHistoryFilterTest" />
+			<class name="org.kpi.test.SecurityTest" />
+			<class name="org.kpi.test.ChangePasswordTest" />
+		</classes>
+	</test> -->
+	<!-- <test name="Logout">
+		<classes>
+			<class name="org.kpi.test.LogoutTest" />
+		</classes>
+	</test> -->
+</suite> <!-- Suite -->
